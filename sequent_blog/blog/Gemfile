@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'csv'
+gem 'rake'
+gem 'sequent', '~> 8'
+
+gem 'sinatra'
+gem 'sinatra-flash'
+gem 'sinatra-contrib'
+gem 'webrick'
+gem 'rackup'
+
+group :test do
+  gem 'database_cleaner'
+  gem 'rspec'
+end

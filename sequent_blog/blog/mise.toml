@@ -1,0 +1,6 @@
+[tools]
+ruby = "3.3.12"
+
+[env]
+# Avoid libpq segfault in forked processes on macOS (Sequent replays events in forked workers)
+PGGSSENCMODE = "disable"

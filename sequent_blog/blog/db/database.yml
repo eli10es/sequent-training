@@ -1,0 +1,15 @@
+database: &database
+  adapter: postgresql
+  host: localhost
+  timeout: 5000
+  schema_search_path: "public, sequent_schema, view_schema"
+
+development:
+  <<: *database
+  pool: 5
+  database: blog_development
+
+test:
+  <<: *database
+  pool: 5
+  database: blog_test
